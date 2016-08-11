@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Document
+  link(rel="stylesheet", type='text/css', href="https://fonts.googleapis.com/css?family=Quicksand")
+  link(rel='stylesheet', href='/static/css/style.css')
+  link(rel="stylesheet", href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css')
+  script.
+    var totalCount = 11;
+    window.onload = function () {
+    var num, node;
+    num = Math.ceil(Math.random() * totalCount);
+    node = document.getElementById("blur");
+    node.style.backgroundImage = "url('/static/img/" + num + ".gif')";
+    };
+    
+  script(src='/static/js/jquery.js')
+  script(src='/static/js/blur.js')
+  
+body
+div#blur
+
+    p 
+     | blunted
+     br
+     | beats
+  
